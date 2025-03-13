@@ -20,6 +20,8 @@ git clone https://github.com/milkymap/anthropic-deep-research.git
 cd anthropic-deep-research
 
 # Install dependencies
+python -m venv env 
+source env/bin/activate
 pip install -e .
 ```
 
@@ -44,7 +46,7 @@ LOG_LEVEL=INFO
 ### Start the Agent Loop
 
 ```bash
-python -m src
+python -m src launch-engine 
 ```
 
 This launches the interactive agent that accepts user queries and processes them.
